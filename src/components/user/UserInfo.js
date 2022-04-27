@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import style from './UserInfo.module.css';
 
 function UserInfo({ ...props }) {
@@ -18,3 +19,14 @@ function UserInfo({ ...props }) {
 }
 
 export default UserInfo;
+UserInfo.propTypes = {
+  name: PropTypes.string,
+  imgUrl: PropTypes.string,
+  companyName: PropTypes.string,
+};
+
+UserInfo.defaultProps = {
+  name: '',
+  imgUrl: '',
+  companyName: '',
+};

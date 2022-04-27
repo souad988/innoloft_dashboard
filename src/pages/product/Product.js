@@ -9,31 +9,33 @@ function Product() {
   console.log('from product', product);
   return (
     <div>
-    {product?
-    <div className={style.productContainer}>
-      <section className={style.productSection}>
-        <img src={product.picture} alt="product img" />
-        <div>
-          <span>
-            {' '}
-            {product.name}
-            {' '}
-          </span>
-          <span>{product.type.name}</span>
-        </div>
-        <ProductInfo description={product.description} />
-      </section>
-      <section>
-        <div className={style.userContainer}>
-          <UserInfo
-            name={[product.user.firstName, product.user.lastName].join(' ')}
-            imgUrl={product.user.profilePicture}
-            companyName={product.company.name}
-          />
-        </div>
-      </section>
-    </div>
-    : ''}
+      {product
+        ? (
+          <div className={style.productContainer}>
+            <section className={style.productSection}>
+              <img src={product.picture} alt="product img" />
+              <div>
+                <span>
+                  {' '}
+                  {product.name}
+                  {' '}
+                </span>
+                <span>{product.type.name}</span>
+              </div>
+              <ProductInfo description={product.description} />
+            </section>
+            <section>
+              <div className={style.userContainer}>
+                <UserInfo
+                  name={[product.user.firstName, product.user.lastName].join(' ')}
+                  imgUrl={product.user.profilePicture}
+                  companyName={product.company.name}
+                />
+              </div>
+            </section>
+          </div>
+        )
+        : ''}
     </div>
   );
 }

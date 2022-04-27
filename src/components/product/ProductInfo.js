@@ -1,11 +1,12 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 function ProductInfo({ ...props }) {
   const { description } = props;
   return (
     <div>
-      <button>Description</button>
-      <button>Attributes</button>
+      <button type="button">Description</button>
+      <button type="button">Attributes</button>
       <div>
         {description}
       </div>
@@ -14,3 +15,11 @@ function ProductInfo({ ...props }) {
 }
 
 export default ProductInfo;
+
+ProductInfo.propTypes = {
+  description: PropTypes.string,
+};
+
+ProductInfo.defaultProps = {
+  description: 'description not provided !',
+};
