@@ -15,13 +15,13 @@ const apiGetProduct = async () => {
 };
 
 const apiGetTrl = async () => {
-    try {
-      const response = await axios.get(`${apiUrl}${trlEndpoint}`);
-      return response;
-    } catch (error) {
-      return error;
-    }
-  };
+  try {
+    const response = await axios.get(`${apiUrl}${trlEndpoint}`);
+    return response;
+  } catch (error) {
+    return error;
+  }
+};
 
 const apiGetConfiguration = async (id) => {
   try {
@@ -33,6 +33,6 @@ const apiGetConfiguration = async (id) => {
 };
 
 const apiStoreService = {
-  apiGetProduct, apiGetConfiguration, apiGetTrl
+  apiGetProduct, apiGetConfiguration, apiGetTrl,
 };
 export default apiStoreService;

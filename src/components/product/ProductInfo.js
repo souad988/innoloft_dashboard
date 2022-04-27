@@ -1,16 +1,16 @@
-import React from 'react'
+import React from 'react';
 
-function ProductInfo({...props}) {
-    const { description } = props;
+function ProductInfo({ ...props }) {
+  const { description } = props;
   return (
     <div>
-     <button>Description</button>
-     <button>Attributes</button>
-     <div>
-         {description}
-     </div>
+      <button>Description</button>
+      <button>Attributes</button>
+      <div>
+        {description}
+      </div>
     </div>
-  )
+  );
 }
 
-export default ProductInfo
+export default ProductInfo;
