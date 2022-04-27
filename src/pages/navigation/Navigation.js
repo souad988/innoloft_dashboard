@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, Outlet } from 'react-router-dom';
-import style from './Navigation.module.css'
+import style from './Navigation.module.css';
 
 function Navigation() {
   return (

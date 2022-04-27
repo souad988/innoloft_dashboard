@@ -1,12 +1,22 @@
 .navigationContainer {
-    display: flex;
-    height: 100vh;
+  display: flex;
+  height: 100vh;
 }
 
 .nav {
-    background-color: rgb(253, 253, 253);
-    box-shadow: 2px 2px 3px  #272E71;
-    display: flex;
-    flex-direction: column;
-    color: #E4B302;
+  background-color: rgb(253, 253, 253);
+  box-shadow: 2px 2px 3px  #272e71;
+  display: flex;
+  flex-direction: column;
+  color: #e4b302;
+  width: 15%;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 20px;
+}
+
+.nav a{
+  text-decoration: none;
+  color: #e4b302;
+  font-weight: 600;
 }
