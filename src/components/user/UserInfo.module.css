@@ -1,0 +1,17 @@
+.userInfoContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.img {
+    border-radius: 50%;
+    box-shadow: 2px 2px 3px ;
+    width: 60%;
+}
+
+span {
+   font-weight: 600;
+   color: #445063;
+}

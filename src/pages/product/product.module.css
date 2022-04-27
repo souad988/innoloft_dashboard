@@ -1,0 +1,22 @@
+.productContainer {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 5px;
+}
+
+.userContainer {
+    background-color: white;
+    border-radius: 5px;
+}
+
+.productSection {
+    display: flex;
+    flex-direction: column;
+}
+
+.productSection img {
+    width: 90%;
+    background-color: white;
+    border-radius: 5px;
+}
+

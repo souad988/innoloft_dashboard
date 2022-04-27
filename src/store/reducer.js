@@ -12,6 +12,6 @@ export const productReducer = (state=productInitialState, action) => {
 
 export const getProduct = () => async (dispatch) => {
   const response = await apiStoreService.apiGetProduct()
-  console.log('from reducer',response)
+  console.log('reducer',response)
   dispatch({type: 'GET_PRODUCT', data: response.data}) 
 }
