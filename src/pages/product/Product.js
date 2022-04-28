@@ -6,7 +6,6 @@ import ProductInfo from '../../components/product/ProductInfo';
 
 function Product() {
   const product = useSelector((state) => state);
-  console.log('from product', product);
   return (
     <div>
       {product
@@ -22,7 +21,7 @@ function Product() {
                 </span>
                 <span>{product.type.name}</span>
               </div>
-              <ProductInfo  />
+              <ProductInfo />
             </section>
             <section>
               <div className={style.userContainer}>

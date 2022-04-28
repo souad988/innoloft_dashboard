@@ -1,31 +1,31 @@
 .tabBtn {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .tabBtn button {
-    padding: 10px;
-    width: 40%;
-    background-color: #e4b302;
-    font-size: 1rem;
-    font-weight: 500;
+  padding: 10px;
+  width: 40%;
+  background-color: #e4b302;
+  font-size: 1rem;
+  font-weight: 500;
 }
 
 .unactive {
-  background-color: #DDDDDD;
+  background-color: #ddd;
 }
 
 .attributeContainer {
   margin: 2vh auto;
   background-color: white;
   border-radius: 5px;
-  box-shadow: 2px 2px 3px #DDDDDD;
+  box-shadow: 2px 2px 3px #ddd;
   padding: 10px;
 }
 
 .addAttribute {
-  background-color: #DDDDDD;
+  background-color: #ddd;
   display: flex;
   justify-content: space-between;
   padding: 5px 10px;
@@ -39,7 +39,12 @@
 
 .addAttribute input:focus {
   outline: none;
-  color:#e4b302;
+  color: #e4b302;
+}
+
+.addAttribute button {
+  border: none;
+  background-color: transparent;
 }
 
 .addAttribute i {

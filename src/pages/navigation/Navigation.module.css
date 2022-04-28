@@ -4,7 +4,7 @@
   grid-template-columns: 1fr 6fr;
   gap: 2vw;
   min-height: 100vh;
-  background-color: #DDDDDD;
+  background-color: #ddd;
 }
 
 .nav {
@@ -15,11 +15,11 @@
   padding-top: 20px;
 }
 
-.nav a{
+.nav a {
   margin-top: 2vh;
   padding-left: 10px;
   text-decoration: none;
-  color: #323B49;
+  color: #323b49;
   font-weight: 600;
 }
 
@@ -28,8 +28,6 @@
 }
 
 .nav a:active {
-  border-left: 3px solid #323B49;
-  color: #272E71;
+  border-left: 3px solid #323b49;
+  color: #272e71;
 }
-
-
