@@ -6,7 +6,6 @@ function UserInfo({ ...props }) {
   const { name, imgUrl, companyName } = props;
   return (
     <div className={style.userInfoContainer}>
-      UserInfo
       <img src={imgUrl} alt="user" className={style.img} />
       <span>
         {' '}

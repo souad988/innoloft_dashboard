@@ -22,7 +22,7 @@ function Product() {
                 </span>
                 <span>{product.type.name}</span>
               </div>
-              <ProductInfo description={product.description} />
+              <ProductInfo  />
             </section>
             <section>
               <div className={style.userContainer}>

@@ -2,21 +2,34 @@
   display: grid;
   padding: 5vh 5vh;
   grid-template-columns: 1fr 6fr;
-  gap: 5px;
-  height: 100vh;
+  gap: 2vw;
+  min-height: 100vh;
   background-color: #DDDDDD;
 }
 
 .nav {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: flex-start;
   padding-top: 20px;
 }
 
 .nav a{
+  margin-top: 2vh;
+  padding-left: 10px;
   text-decoration: none;
-  color: #272E71;
+  color: #323B49;
   font-weight: 600;
 }
+
+.nav a:hover {
+  color: #e4b302;
+}
+
+.nav a:active {
+  border-left: 3px solid #323B49;
+  color: #272E71;
+}
+
+

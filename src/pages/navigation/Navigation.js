@@ -7,10 +7,10 @@ function Navigation() {
     <div className={style.navigationContainer}>
       <nav className={style.nav}>
         <Link to="/">
-          home
+        <i className='fas fa-home'  />home
         </Link>
         <Link to="/product">
-          product
+        <i class="fab fa-product-hunt"></i> product
         </Link>
       </nav>
       <section>
