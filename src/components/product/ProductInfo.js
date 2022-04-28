@@ -19,7 +19,7 @@ function ProductInfo() {
           <ProductAttributes
             categories={product.categories}
             businessModels={product.businessModels}
-            rtl={product.rtl}
+            trl={product.trl}
           />
         )}
     </div>

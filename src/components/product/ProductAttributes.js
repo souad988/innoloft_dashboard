@@ -3,14 +3,14 @@ import PropTypes from 'prop-types';
 import AttributeList from './AttributeList';
 
 function ProductAttributes({ ...props }) {
-  const { categories, businessModels, rtl } = props;
+  const { categories, businessModels, trl } = props;
   return (
     <div>
       <AttributeList categories={categories} />
 
       <AttributeList businessModels={businessModels} />
 
-      <AttributeList rtl={rtl} />
+      <AttributeList trl={trl} />
     </div>
   );
 }
@@ -25,7 +25,7 @@ ProductAttributes.propTypes = {
     id: PropTypes.string,
     name: PropTypes.string,
   })),
-  rtl: PropTypes.arrayOf(PropTypes.shape({
+  trl: PropTypes.arrayOf(PropTypes.shape({
     id: PropTypes.string,
     name: PropTypes.string,
   })),
@@ -40,7 +40,7 @@ ProductAttributes.defaultProps = {
     id: '',
     name: '',
   }],
-  rtl: [{
+  trl: [{
     id: '',
     name: '',
   }],
