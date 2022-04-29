@@ -1,18 +1,15 @@
+
 .navigationContainer {
-  display: grid;
   padding: 5vh 5vh;
-  grid-template-columns: 1fr 6fr;
-  gap: 2vw;
+  display: grid;
+  grid-template-rows: auto;
   min-height: 100vh;
   background-color: #ddd;
 }
 
 .nav {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding-top: 20px;
+  flex-direction: row;
 }
 
 .nav a {
@@ -30,4 +27,19 @@
 .nav a:active {
   border-left: 3px solid #323b49;
   color: #272e71;
+}
+
+@media (min-width: 700px) {
+  .navigationContainer {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    gap: 2vw;
+  }
+
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-top: 20px;
+  }
 }

@@ -1,14 +1,17 @@
-.productContainer {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 5vw;
-}
 
 .userAdressSection {
-  height: 100vh;
+  height: 75vh;
   display: grid;
   grid-template-rows: 1fr 1fr;
   gap: 5vh;
+}
+
+.productNameType {
+  width: 100%;
+  background-color: white;
+  border-radius: 3px;
+  padding: 10px;
+  margin: 1rem 0;
 }
 
 .userContainer {
@@ -28,7 +31,15 @@
 
 .productSection img {
   width: 100%;
-  height: 30vh;
+  height: 20vh;
   background-color: white;
   border-radius: 5px;
+}
+
+@media (min-width: 700px) {
+  .productContainer {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 5vw;
+  }
 }

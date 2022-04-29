@@ -5,11 +5,12 @@
 }
 
 .tabBtn button {
-  padding: 10px;
+  padding: 8px;
   width: 40%;
   background-color: #e4b302;
   font-size: 1rem;
   font-weight: 500;
+  border: none;
 }
 
 .unactive {
@@ -45,6 +46,10 @@
 .addAttribute button {
   border: none;
   background-color: transparent;
+}
+
+.tabBtn button:hover {
+  background-color: #ddd;
 }
 
 .addAttribute i {

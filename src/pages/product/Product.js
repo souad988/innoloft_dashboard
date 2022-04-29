@@ -14,7 +14,7 @@ function Product() {
           <div className={style.productContainer}>
             <section className={style.productSection}>
               <img src={product.picture} alt="product img" />
-              <div>
+              <div className={style.productNameType}>
                 <span>
                   {' '}
                   {product.name}
