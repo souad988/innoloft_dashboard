@@ -1,6 +1,12 @@
 # innoloft_dashboard
 this project is react web application that retreives product data from distant api and display it in different sections, and it gives access to the user to see and update data at the same time.
 
+##To improve
+-styling 
+-add position marker to the adress map and add address info section to the map
+-add tests to inputs onchange value
+-add submit changes to api feature(button and function)
+
 ##Getting Started
 
 *Option 1*
